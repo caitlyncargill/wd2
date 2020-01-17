@@ -7,27 +7,27 @@
     "footer footer";
 }
 
-div {
-  height: 60px;
+body {
+  background: linear-gradient(to right, lightgreen, teal);
 }
 
 .header {
-  background-color: red;
+  background:rgba(0,0,0,.2);
   grid-area: header;
 }
 
 .nav {
-  background-color: blue;
+  background:rgba(0,0,0,.2);
   grid-area: nav;
 }
 
 .main {
-  background-color: yellow;
+  background:rgba(0,0,0,.2);
   grid-area: main;
 }
 
 .footer {
-  background-color: purple;
+  background:rgba(0,0,0,.2);
   grid-area: footer;
 }
 
