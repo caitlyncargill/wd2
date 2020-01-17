@@ -1,6 +1,8 @@
 .container1 { /*for index.html*/
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: auto 1fr;
+  grid-gap: .5em;
+  margin: 1%;
   grid-template-areas:
     "header header"
     "nav main"
@@ -12,22 +14,22 @@ div {
 }
 
 .header {
-  background-color: red;
   grid-area: header;
+  background:rgba(0,0,0,.2);
 }
 
 .nav {
-  background-color: blue;
   grid-area: nav;
+  background:rgba(0,0,0,.2);
 }
 
 .main {
-  background-color: yellow;
   grid-area: main;
+  background:rgba(0,0,0,.2);
 }
 
 .footer {
-  background-color: purple;
   grid-area: footer;
+  background:rgba(0,0,0,.2);
 }
 
