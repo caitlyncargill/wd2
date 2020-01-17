@@ -1,32 +1,55 @@
 .container1 { /*for index.html*/
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
   grid-template-areas:
     "header header"
     "nav main"
     "footer footer";
-}
+    }
 
 body {
   background: linear-gradient(to right, lightgreen, teal);
 }
 
-.header {
+header {
   background:rgba(0,0,0,.2);
   grid-area: header;
 }
 
-.nav {
+nav {
   background:rgba(0,0,0,.2);
   grid-area: nav;
 }
 
-.main {
+nav ul {
+   padding:10px;
+   margin:0;
+}
+
+nav li {
+    padding:10px 10px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration:none;
+    color:navy;
+}
+
+nav a:hover {
+    color:white;
+}
+
+main {
   background:rgba(0,0,0,.2);
   grid-area: main;
 }
 
-.footer {
+footer {
   background:rgba(0,0,0,.2);
   grid-area: footer;
 }
