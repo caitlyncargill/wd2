@@ -13,16 +13,19 @@ header h1 {
   color: mediumspringgreen; 
   text-shadow: 2px 2px 5px navy;
   font-size: 5vw;
+  text-align: center;
 }
 
 header h3 {
   color: navy;
   font-size: 2vw;
+  text-align: center;
 }
 
 main h2 {
   color: navy;
-  font-size: 3em;
+  font-size: 2vw;
+  text-align: center;
 }
 
 main p {
@@ -37,46 +40,52 @@ footer p {
 
 body {
   background: linear-gradient(to right, lightgreen, teal);
+  font-family: Veradana;
+  margin: 0;
 }
 
 header {
   background: rgba(0,0,0,.2);
   grid-area: header;
+  padding: 5px;
 }
 
 nav {
   background: rgba(0,0,0,.2);
   grid-area: nav;
+  padding: 5px;
 }
 
 nav ul {
-   padding: 10px;
-   margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 
 nav li {
-    padding: 10px 10px;
-    list-style-type: none;
-    font-size: 1.5em;
-    font-weight: bold;
+  padding: 10px 10px;
+  list-style-type: none;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav a {
-    text-decoration: none;
-    color: navy;
+  text-decoration: none;
+  color: navy;
 }
 
 nav a:hover {
-    color: white;
+  color: white;
 }
 
 main {
   background: rgba(0,0,0,.2);
   grid-area: main;
+  padding: 5px;
 }
 
 footer {
   background: rgba(0,0,0,.2);
   grid-area: footer;
+  text-align: center;
+  padding: 5px;
 }
-
