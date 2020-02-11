@@ -73,6 +73,31 @@ main p {
   font-size:1em;
 }
 
+aside {
+  grid-area: aside;
+  background: rgba(0,0,0,.2);
+  padding: 5px;
+}
+
+aside a {
+  color: white;
+}
+
+aside a:hover {
+  color: navy;
+}
+
+aside li {
+  color: navy;
+  padding: 10px 0;
+}
+
+aside h2 {
+  text-align: center;
+  color: navy;
+  padding: 0 5px;
+}
+
 footer {
   grid-area:footer;
   background:rgba(0,0,0,.2);
@@ -96,6 +121,7 @@ footer p {
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
     }
 
@@ -129,10 +155,12 @@ footer p {
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
 .container1 { /*for index.html*/
+  display: grid;
   grid-template-columns:auto 1fr;
   grid-template-areas:
     "header header"
     "nav main"
+    "aside aside"
     "footer footer";
     }
 
@@ -159,11 +187,12 @@ footer p {
 @media only screen and (min-width: 960px)  {
 
 .container1 { /*for index.html*/
-  grid-template-columns:auto 1fr;
+  display: grid;
+  grid-template-columns:auto 1fr 25%;
   grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
     }
 	
 
