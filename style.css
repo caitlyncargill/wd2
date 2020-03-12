@@ -187,6 +187,44 @@ video {
     justify-content:space-around;
 }
 
+form {
+    background-color:darkseagreen;
+    width:90%;
+    margin:auto;
+    color:white;
+    padding:10px;
+}
+
+.button {
+  padding: 5px;
+  color: lightseagreen;
+  background-color: navy;
+}
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.call {
+    color:navy;
+    text-align:center;
+    font-size:2em;
+    background-color:darkseagreen;
+    width:60%;
+    padding: 5px 0 0 0;
+    margin:10px auto 0 auto;
+    cursor:pointer;
+}
+
+.phone{
+    color:darkseagreen;
+    background-color:navy;
+    padding:5px;
+    text-align:center;
+    font-size:.75em;
+}
+
+
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -247,6 +285,13 @@ video {
     "main"
     "footer";
     }
+
+.nestedgrid2 {
+  display:grid;
+  grid-template-areas:
+  "div1"
+  "div2";
+}
 
 /*This stuff is for the hamburger menu*/
 .toggleNav {
@@ -323,6 +368,13 @@ video {
     "nav main"
     "footer footer";
     }
+    
+.nestedgrid2 {
+  display:grid;
+  grid-template-areas:
+  "div1"
+  "div2";
+}
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -389,5 +441,11 @@ video {
     "nav main"
     "footer footer";
     }
+    
+.nestedgrid2 {
+  display:grid;
+  grid-template-areas:
+  "div1 div2";
+}
 
 }
