@@ -30,13 +30,13 @@
       <form action="https://formspree.io/20199@bss.k12.oh.us" method="POST">
         <div class="nestedgrid2">
         <div class="div1">
-        Name*<br><input type="text" name="name" required spellcheck="false" autocomplete="on"><br>
-        Email*<br><input type="email" name="email" required spellcheck="false" autocomplete="on"><br>
-        Phone*<br><input type="tel" name="phone" required spellcheck="false" autocomplete="on"><br>
-        Personal Website<br><input type="url" name="website"><br>
+        Name*<br><input type="text" name="name" required spellcheck="false" autocomplete="on" aria-label="Name"><br>
+        Email*<br><input type="email" name="email" required spellcheck="false" autocomplete="on" aria-label="Email"><br>
+        Phone*<br><input type="tel" name="phone" required spellcheck="false" autocomplete="on" aria-label="Phone"><br>
+        Personal Website<br><input type="url" name="website" aria-label="Personal Website"><br>
         </div>
         <div class="div2">
-        Next Destination<br><input type="text" name="destination" list="vaca">
+        Next Destination<br><input type="text" name="destination" list="vaca" aria-label="Next Destination">
         <datalist id="vaca">
           <option value="Beijing">
           <option value="Lisbon">
@@ -45,9 +45,9 @@
           <option value="Tokyo">
           <option value="Washington D.C.">
         </datalist><br>
-        Expected Date of Departure<br><input type="date" name="date of departure"><br>
-        Number of Nights on Trip<br><input type="number" name="nights" min="1" max="8" step="1"><br>
-        <input type="submit" value= "Help Me Book My Trip" class= "button">
+        Expected Date of Departure<br><input type="date" name="date of departure" aria-label="Expected Date of Departure"><br>
+        Number of Nights on Trip<br><input type="number" name="nights" min="1" max="8" step="1" aria-label="Number of Nights on Trip"><br>
+        <input type="submit" value= "Help Me Book My Trip" class= "button" aria-label="Submit">
         </div>
         </div>
       </form>
