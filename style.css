@@ -224,6 +224,10 @@ input {
     font-size:.75em;
 }
 
+.div1, .div2 {
+  background-color: #000080;
+}
+
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
